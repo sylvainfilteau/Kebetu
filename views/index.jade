@@ -1,0 +1,7 @@
+h1= title
+div(id='list')
+	form(method='POST', action='/kebetu')
+		textarea(name='message')
+		input(type='submit', value='Send')
+	.cleared
+	!=partial('message', messages)

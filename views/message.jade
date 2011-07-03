@@ -1,0 +1,8 @@
+.message
+	img.avatar(src=message.posted_by.avatar_url + "?s=70")
+	.info
+		!= message.getFormatedPostedAt()
+	h2
+		!=message.posted_by.complete_name
+	p
+		!=message.text
